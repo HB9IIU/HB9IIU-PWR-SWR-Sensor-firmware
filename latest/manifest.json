@@ -1,0 +1,27 @@
+{
+  "name": "PMX-500",
+  "version": "5.0.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "https://raw.githubusercontent.com/HB9IIU/HB9IIU-PWR-SWR-Sensor-firmware/main/latest/bootloader.bin",
+          "offset": 0
+        },
+        {
+          "path": "https://raw.githubusercontent.com/HB9IIU/HB9IIU-PWR-SWR-Sensor-firmware/main/latest/partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "https://raw.githubusercontent.com/HB9IIU/HB9IIU-PWR-SWR-Sensor-firmware/main/latest/boot_app0.bin",
+          "offset": 57344
+        },
+        {
+          "path": "https://raw.githubusercontent.com/HB9IIU/HB9IIU-PWR-SWR-Sensor-firmware/main/latest/firmware.bin",
+          "offset": 65536
+        }
+      ]
+    }
+  ]
+}
